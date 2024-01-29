@@ -5,91 +5,161 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Young+Serif:wght@400&display=swap">
+
   <title>Frontend Mentor | Recipe page</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
+    
+    .fondo {
+      background-color:hsl(30, 53%, 90%);
+    }
+    
+    .container {
+      max-width: 650px;
+      margin: 0 auto;
+      background-color: hsl(0, 0%, 100%);
+      padding: 35px;
+      border-radius: 10px;
+    }
+
+    .container_preparation {
+      max-width: 650px;
+      margin: 0 auto;
+      background-color: hsl(330, 100%, 98%);
+      padding: 10px;
+      border-radius: 10px;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    .tabla {
+      color:hsl(30, 53%, 90%);
+    }
+
+    p,li,ul,ol,th,td {
+      color:hsl(30, 10%, 34%);
+      font-size: 16px;
+      font-family: 'Outfit', sans-serif;
+      font-weight: 400;
+    }
+
+    h1 {
+      color:hsl(24, 5%, 18%);
+      font-family: 'Young Serif';
+      font-size: 40px;
+      font-weight: 400;
+    }
+
+    div td {
+      color:hsl(14, 45%, 36%);
+      font-weight: 700;
+    }
+
+    h2 {
+      color:hsl(14, 45%, 36%);
+      font-family: 'Young Serif';
+      font-weight: 400;
+    }
+
+    h3 {
+      color:hsl(332, 51%, 32%);
+      font-family: 'Outfit';
+      font-weight: 600;
+    }
+
   </style>
 </head>
-<body style = "background-color:hsl(30, 53%, 90%);">
+<body class = "fondo">
 
-  <img src="image-omelette.jpeg" alt="Imagen de omelette">
+  <div class = "container">
 
-  <h1 style="color:hsl(24, 5%, 18%)">Simple Omelette Recipe</h1>
+    <img src="./assets/images/image-omelette.jpeg" alt="Imagen de omelette">
 
-  <p style="color:hsl(30, 10%, 34%)">An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked 
-  to perfection, optionally filled with your choice of cheese, vegetables, or meats.</p>
+    <h1>Simple Omelette Recipe</h1>
 
-  <h2 style="color:hsl(332, 51%, 32%)">Preparation time</h2>
+    <p>An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked 
+    to perfection, optionally filled with your choice of cheese, vegetables, or meats.</p>
 
-  <ul style="color:hsl(30, 10%, 34%)">
-    <li style="color:hsl(30, 10%, 34%)"><b>Total:</b> Approximately 10 minutes</li>
-    <li style="color:hsl(30, 10%, 34%)"><b>Preparation:</b> 5 minutes</li>
-    <li style="color:hsl(30, 10%, 34%)"><b>Cooking:</b> 5 minutes</li>
-  </ul>
+    <div class = "container_preparation">
+      <h3>Preparation time</h3>
 
-  <h2 style="color:hsl(14, 45%, 36%)">Ingredients</h2>
+      <ul>
+        <li><b>Total:</b> Approximately 10 minutes</li>
+        <li><b>Preparation:</b> 5 minutes</li>
+        <li><b>Cooking:</b> 5 minutes</li>
+      </ul>
+    </div>
 
-  <ul style="color:hsl(14, 45%, 36%)">
-    <li style="color:hsl(30, 10%, 34%)">2-3 large eggs</li>
-    <li style="color:hsl(30, 10%, 34%)">Salt, to taste</li>
-    <li style="color:hsl(30, 10%, 34%)">Pepper, to taste</li>
-    <li style="color:hsl(30, 10%, 34%)">1 tablespoon of butter or oil</li>
-    <li style="color:hsl(30, 10%, 34%)">Optional fillings: cheese, diced vegetables, cooked meats, herbs</li>
-  </ul>
+    <h2>Ingredients</h2>
 
-  <h2 style="color:hsl(14, 45%, 36%)">Instructions</h2>
+    <ul>
+      <li>2-3 large eggs</li>
+      <li>Salt, to taste</li>
+      <li>Pepper, to taste</li>
+      <li>1 tablespoon of butter or oil</li>
+      <li>Optional fillings: cheese, diced vegetables, cooked meats, herbs</li>
+    </ul>
 
-  <ol style="color:hsl(30, 10%, 34%)">
-    <li><b>Beat the eggs:</b> In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed. 
-    You can add a tablespoon of water or milk for a fluffier texture.</li>
+    <h2>Instructions</h2>
 
-    <li><b>Heat the pan:</b> Place a non-stick frying pan over medium heat and add butter or oil.</li>
+    <ol>
+      <li><b>Beat the eggs:</b> In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed. 
+      You can add a tablespoon of water or milk for a fluffier texture.</li>
 
-    <li><b>Cook the omelette:</b> Once the butter is melted and bubbling, pour in the eggs. Tilt the pan to ensure 
-    the eggs evenly coat the surface.</li>
+      <li><b>Heat the pan:</b> Place a non-stick frying pan over medium heat and add butter or oil.</li>
 
-    <li><b>Add fillings (optional):</b> When the eggs begin to set at the edges but are still slightly runny in the 
-    middle, sprinkle your chosen fillings over one half of the omelette.</li>
+      <li><b>Cook the omelette:</b> Once the butter is melted and bubbling, pour in the eggs. Tilt the pan to ensure 
+      the eggs evenly coat the surface.</li>
 
-    <li><b>Fold and serve:</b> As the omelette continues to cook, carefully lift one edge and fold it over the 
-    fillings. Let it cook for another minute, then slide it onto a plate.</li>
+      <li><b>Add fillings (optional):</b> When the eggs begin to set at the edges but are still slightly runny in the 
+      middle, sprinkle your chosen fillings over one half of the omelette.</li>
 
-    <li><b>Enjoy:</b> Serve hot, with additional salt and pepper if needed.</li>
-  </ol>
-  
-  <h2 style="color:hsl(14, 45%, 36%)">Nutrition</h2>
+      <li><b>Fold and serve:</b> As the omelette continues to cook, carefully lift one edge and fold it over the 
+      fillings. Let it cook for another minute, then slide it onto a plate.</li>
 
-  <p style="color:hsl(30, 10%, 34%)">The table below shows nutritional values per serving without the additional fillings.</p>
+      <li><b>Enjoy:</b> Serve hot, with additional salt and pepper if needed.</li>
+    </ol>
+    
+    <h2>Nutrition</h2>
 
-  <table style="color:hsl(30, 53%, 90%)">
-    <tr>
-      <th style="color:hsl(30, 10%, 34%)">Calories</th>
-      <td style="color:hsl(30, 10%, 34%)">277kcal</td>
-    </tr>
+    <p>The table below shows nutritional values per serving without the additional fillings.</p>
 
-    <tr>
-      <th style="color:hsl(30, 10%, 34%)">Carbs</th>
-      <td style="color:hsl(30, 10%, 34%)">0g</td>
-    </tr>
+    <table class="tabla">
+      <tr>
+        <th>Calories</th>
+        <td>277kcal</td>
+      </tr>
 
-    <tr>
-      <th style="color:hsl(30, 10%, 34%)">Protein</th>
-      <td style="color:hsl(30, 10%, 34%)">20g</td>
-    </tr>
+      <tr>
+        <th>Carbs</th>
+        <td>0g</td>
+      </tr>
 
-    <tr>
-      <th style="color:hsl(30, 10%, 34%)">Fat</th>
-      <td style="color:hsl(30, 10%, 34%)">22g<td>
-    </td>
-  </table>
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#"> Mariana Salas</a>.
+      <tr>
+        <th>Protein</th>
+        <td>20g</td>
+      </tr>
+
+      <tr>
+        <th>Fat</th>
+        <td>22g<td>
+      </td>
+    </table>
   </div>
+    
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#"> Mariana Salas</a>.
+    </div>
+
 </body>
 </html>
