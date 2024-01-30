@@ -10,7 +10,6 @@
 
   <title>Frontend Mentor | Recipe page</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
@@ -24,27 +23,27 @@
       margin: 100px auto;
       background-color: hsl(0, 0%, 100%);
       padding: 40px;
-      border-radius: 10px;
+      border-radius: 20px;
     }
 
     .container_preparation {
       max-width: 650px;
       margin: 0 auto;
       background-color: hsl(330, 100%, 98%);
-      padding: 10px;
+      padding: 15px;
       padding-top: 5px;
-      border-radius: 10px;
+      border-radius: 15px;
     }
 
-    img {
+    div img {
       width: 100%;
       height: auto;
-      border-radius: 10px;
+      border-radius: 15px;
     }
 
     .table_nutrition th, .table_nutrition td {
       border-bottom: 2px solid hsl(0, 0%, 91%);
-      padding-left: 30px;
+      padding-left: 35px;
     }
 
     .table_nutrition {
@@ -55,33 +54,33 @@
       border-bottom: 4px solid hsl(0, 0%, 100%);
     }
 
-    p,li,ul,ol,th,td {
+    div td {
+      color:hsl(14, 45%, 36%);
+      font-weight: 700;
+    }
+
+    div p,li,ul,ol,th,td {
       color:hsl(30, 10%, 34%);
       font-size: 16px;
       font-family: 'Outfit', sans-serif;
       font-weight: 400;
     }
 
-    h1 {
+    div h1 {
       color:hsl(24, 5%, 18%);
       font-family: 'Young Serif';
       font-size: 40px;
       font-weight: 400;
     }
 
-    div td {
-      color:hsl(14, 45%, 36%);
-      font-weight: 700;
-    }
-
-    h2 {
+    div h2 {
       color:hsl(14, 45%, 36%);
       font-family: 'Young Serif';
       font-weight: 400;
       font-size: 30px;
     }
 
-    h3 {
+    div h3 {
       color:hsl(332, 51%, 32%);
       font-family: 'Outfit';
       font-weight: 600;
@@ -90,12 +89,12 @@
     }
 
     div li {
-      padding-left: 25px;
+      padding-left: 18px;
       margin-bottom: 15px;
     }
 
     .lists {
-      padding-left: 30px;
+      padding-left: 25px;
     }
 
     .container_preparation li::marker {
@@ -114,14 +113,13 @@
       margin-top: 40px;
       margin-bottom: 30px;
     }
-
   </style>
 </head>
 <body class = "background">
 
   <div class = "container">
 
-    <img src="./assets/images/image-omelette.jpeg" alt="Imagen de omelette">
+    <img src = "./assets/images/image-omelette.jpeg" alt = "Imagen de omelette">
 
     <h1>Simple Omelette Recipe</h1>
 
@@ -140,7 +138,7 @@
 
     <h2>Ingredients</h2>
 
-    <ul class="lists">
+    <ul class = "lists">
       <li>2-3 large eggs</li>
       <li>Salt, to taste</li>
       <li>Pepper, to taste</li>
@@ -148,11 +146,11 @@
       <li>Optional fillings: cheese, diced vegetables, cooked meats, herbs</li>
     </ul>
 
-    <div class="lines"></div>
+    <div class = "lines"></div>
 
     <h2>Instructions</h2>
 
-    <ol class="lists">
+    <ol class = "lists">
       <li><b>Beat the eggs:</b> In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed. 
       You can add a tablespoon of water or milk for a fluffier texture.</li>
 
@@ -170,7 +168,7 @@
       <li><b>Enjoy:</b> Serve hot, with additional salt and pepper if needed.</li>
     </ol>
 
-    <div class="lines"></div>
+    <div class = "lines"></div>
     
     <h2>Nutrition</h2>
 
