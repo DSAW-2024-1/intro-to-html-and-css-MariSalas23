@@ -15,15 +15,15 @@
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
     
-    .fondo {
+    .background {
       background-color:hsl(30, 53%, 90%);
     }
     
     .container {
       max-width: 650px;
-      margin: 0 auto;
+      margin: 100px auto;
       background-color: hsl(0, 0%, 100%);
-      padding: 35px;
+      padding: 40px;
       border-radius: 10px;
     }
 
@@ -32,6 +32,7 @@
       margin: 0 auto;
       background-color: hsl(330, 100%, 98%);
       padding: 10px;
+      padding-top: 5px;
       border-radius: 10px;
     }
 
@@ -41,8 +42,17 @@
       border-radius: 10px;
     }
 
-    .tabla {
-      color:hsl(30, 53%, 90%);
+    .table_nutrition th, .table_nutrition td {
+      border-bottom: 2px solid hsl(0, 0%, 91%);
+      padding-left: 30px;
+    }
+
+    .table_nutrition {
+      width: 100%;
+      text-align: left;
+      border-collapse: collapse;
+      line-height: 50px;
+      border-bottom: 4px solid hsl(0, 0%, 100%);
     }
 
     p,li,ul,ol,th,td {
@@ -68,17 +78,46 @@
       color:hsl(14, 45%, 36%);
       font-family: 'Young Serif';
       font-weight: 400;
+      font-size: 30px;
     }
 
     h3 {
       color:hsl(332, 51%, 32%);
       font-family: 'Outfit';
       font-weight: 600;
+      font-size: 22px;
+      margin-left: 15px;
+    }
+
+    div li {
+      padding-left: 25px;
+      margin-bottom: 15px;
+    }
+
+    .lists {
+      padding-left: 30px;
+    }
+
+    .container_preparation li::marker {
+      color:hsl(332, 51%, 32%);
+    }
+
+    .lists li::marker {
+      color: hsl(14, 45%, 36%);
+      font-weight: 600;
+    }
+
+    .lines {
+      border-top: 2px solid	hsl(0, 0%, 91%);
+      height: 2px;
+      max-width: 100%;
+      margin-top: 40px;
+      margin-bottom: 30px;
     }
 
   </style>
 </head>
-<body class = "fondo">
+<body class = "background">
 
   <div class = "container">
 
@@ -87,7 +126,7 @@
     <h1>Simple Omelette Recipe</h1>
 
     <p>An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked 
-    to perfection, optionally filled with your choice of cheese, vegetables, or meats.</p>
+    to perfection, optionally filled with your choice of cheese, vegetables, or meats.<br><br></p>
 
     <div class = "container_preparation">
       <h3>Preparation time</h3>
@@ -101,7 +140,7 @@
 
     <h2>Ingredients</h2>
 
-    <ul>
+    <ul class="lists">
       <li>2-3 large eggs</li>
       <li>Salt, to taste</li>
       <li>Pepper, to taste</li>
@@ -109,9 +148,11 @@
       <li>Optional fillings: cheese, diced vegetables, cooked meats, herbs</li>
     </ul>
 
+    <div class="lines"></div>
+
     <h2>Instructions</h2>
 
-    <ol>
+    <ol class="lists">
       <li><b>Beat the eggs:</b> In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed. 
       You can add a tablespoon of water or milk for a fluffier texture.</li>
 
@@ -128,17 +169,19 @@
 
       <li><b>Enjoy:</b> Serve hot, with additional salt and pepper if needed.</li>
     </ol>
+
+    <div class="lines"></div>
     
     <h2>Nutrition</h2>
 
     <p>The table below shows nutritional values per serving without the additional fillings.</p>
 
-    <table class="tabla">
+    <table class="table_nutrition">
       <tr>
         <th>Calories</th>
         <td>277kcal</td>
       </tr>
-
+      
       <tr>
         <th>Carbs</th>
         <td>0g</td>
@@ -151,8 +194,8 @@
 
       <tr>
         <th>Fat</th>
-        <td>22g<td>
-      </td>
+        <td>22g</td>
+      </tr>
     </table>
   </div>
     
